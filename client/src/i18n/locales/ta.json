@@ -205,21 +205,24 @@
       "joinNow": "இப்போது சேருங்கள் - இது இலவசம்!",
       "alreadyMember": "ஏற்கனவே உறுப்பினரா? உள்நுழை"
     },
-    "games_subtitle": "Games subtitle",
-    "app_banner": "Start Your Eco Journey Today",
-    "welcome": "Welcome",
-    "title": "Title",
-    "subtitle": "Subtitle",
-    "description": "Description",
-    "playCta": "Play Cta",
-    "exploreCta": "Explore Cta",
-    "mission_title": "Mission title",
-    "mission_text": "Mission text",
-    "games_section": "Games section",
-    "more_games": "More games",
-    "topics_section": "Topics section",
-    "topics_subtitle": "Topics subtitle",
-    "more_topics": "More topics"
+    "games_subtitle": "ஊடாடும் விளையாட்டுகள் மூலம் சூழலியல் உலகை ஆராய்வதில் வேடிக்கையும் கற்றலும் கைகோர்க்கின்றன.",
+    "app_banner": "உங்கள் ஃபோன் அல்லது டேப்லெட்டில் சிறப்பாக விளையாடுங்கள் — செயலியை இலவசமாகப் பதிவிறக்குங்கள்!",
+    "welcome": "வரவேற்கிறோம்",
+    "title": "EcoKids India",
+    "subtitle": "கற்கவும் · விளையாடவும் · பூமியை காக்கவும்",
+    "description": "1 முதல் 12 ஆம் வகுப்பு வரையிலான ஆயிரக்கணக்கான மாணவர்களுடன் இணைந்து ஊடாடும் விளையாட்டுகள், செய்முறைகள் மற்றும் வினாடி வினாக்கள் மூலம் சுற்றுச்சூழல் பாதுகாப்பை கற்று கொள்ளுங்கள்.",
+    "playCta": "இப்போதே விளையாடு!",
+    "exploreCta": "தலைப்புகளை காண்",
+    "mission_title": "நமது நோக்கம்",
+    "mission_text": "மகிழ்ச்சியான மற்றும் கல்வி சார்ந்த வழியில் நமது பூமியை எவ்வாறு பராமரிப்பது மற்றும் பாதுகாப்பது என்பதை கற்றுக்கொள்ளுங்கள். மறுசுழற்சி, ஆற்றல், விலங்கு பாதுகாப்பு மற்றும் பலவற்றைப் பற்றிய விளையாட்டுகள், செயல்பாடுகள் மற்றும் பாடங்களை ஆராயுங்கள்.",
+    "games_section": "சுற்றுச்சூழல் விளையாட்டுகள்",
+    "more_games": "மேலும் விளையாட்டுகள்",
+    "topics_section": "சுற்றுச்சூழல் தலைப்புகள்",
+    "topics_subtitle": "சுற்றுச்சூழல் மற்றும் அதனைப் பாதுகாப்பது குறித்த கட்டுரைகள் மற்றும் பாடங்கள்.",
+    "more_topics": "மேலும் தலைப்புகள்",
+    "tryWebApp": "வெப் ஆப்பை முயற்சிக்கவும்",
+    "mobileAppComingSoon": "மொபைல் ஆப் விரைவில் வருகிறது",
+    "webAppBannerSubtitle": "மொபைல் ஆப் உருவாக்கத்தில் உள்ளது; அதுவரை வெப் ஆப்பைப் பயன்படுத்துங்கள்."
   },
   "topics": {
     "title": "சுற்றுச்சூழல் தலைப்புகள்",
@@ -806,5 +809,15 @@
     "createGame": "Create Game",
     "addExperiment": "Add Experiment",
     "viewReports": "View Reports"
+  },
+  "mission": {
+    "trees": "மரங்கள்",
+    "recycling": "மறுசுழற்சி",
+    "energy": "ஆற்றல்",
+    "animals": "விலங்குகள்",
+    "water": "தண்ணீர்",
+    "soil": "மண்",
+    "schools": "பள்ளிகள்",
+    "planet": "பூமி"
   }
 }

@@ -20,6 +20,7 @@ const Login = () => {
   const [qrToken, setQrToken] = useState('');
   const [otpSent, setOtpSent] = useState(false);
   const [otpLoading, setOtpLoading] = useState(false);
+  const [otpError, setOtpError] = useState('');
   const [showPassword, setShowPassword] = useState(false);
   const [sessionExpired, setSessionExpired] = useState(false);
 
@@ -52,11 +53,12 @@ const Login = () => {
   const sendOtp = async () => {
     if (!phoneData.phone) return;
     setOtpLoading(true);
+    setOtpError('');
     try {
       await axios.post('/api/v1/auth/send-otp', { phone: phoneData.phone });
       setOtpSent(true);
     } catch (err) {
-      alert(err?.response?.data?.message || 'Failed to send OTP');
+      setOtpError(err?.response?.data?.message || 'Could not send OTP. Please check your phone number and try again.');
     } finally {
       setOtpLoading(false);
     }
@@ -65,6 +67,7 @@ const Login = () => {
   const verifyOtp = async () => {
     if (!phoneData.phone || !phoneData.otp) return;
     setOtpLoading(true);
+    setOtpError('');
     try {
       const response = await axios.post('/api/v1/auth/verify-otp', {
         phone: phoneData.phone,
@@ -77,7 +80,7 @@ const Login = () => {
       }
       navigate(destinationForRole(role));
     } catch (err) {
-      alert(err?.response?.data?.message || 'Invalid OTP');
+      setOtpError(err?.response?.data?.message || 'Invalid OTP');
     } finally {
       setOtpLoading(false);
     }
@@ -256,6 +259,12 @@ const Login = () => {
           </form>
           ) : activeTab === 'phone' ? (
             <div className="space-y-5">
+              {otpError && (
+                <div className="text-red-600 text-sm bg-red-50 px-3 py-2 rounded-lg border border-red-100">
+                  {otpError}
+                </div>
+              )}
+
               <div>
                 <label className="block text-sm font-bold text-gray-700 mb-1.5">Phone Number</label>
                 <div className="relative">

@@ -205,21 +205,24 @@
       "joinNow": "ఇప్పుడే చేరండి - ఇది ఉచితం!",
       "alreadyMember": "ఇప్పటికే సభ్యుడా? సైన్ ఇన్ చేయండి"
     },
-    "games_subtitle": "Games subtitle",
-    "app_banner": "Start Your Eco Journey Today",
-    "welcome": "Welcome",
-    "title": "Title",
-    "subtitle": "Subtitle",
-    "description": "Description",
-    "playCta": "Play Cta",
-    "exploreCta": "Explore Cta",
-    "mission_title": "Mission title",
-    "mission_text": "Mission text",
-    "games_section": "Games section",
-    "more_games": "More games",
-    "topics_section": "Topics section",
-    "topics_subtitle": "Topics subtitle",
-    "more_topics": "More topics"
+    "games_subtitle": "ఇంటరాక్టివ్ గేమ్‌ల ద్వారా పర్యావరణ శాస్త్రాన్ని అన్వేషించడంలో సరదా మరియు అభ్యాసం కలిసి నడుస్తాయి.",
+    "app_banner": "ఫోన్ లేదా టాబ్లెట్‌లో మరింత బాగా ఆడు — యాప్‌ను ఉచితంగా డౌన్‌లోడ్ చేసుకో!",
+    "welcome": "స్వాగతం",
+    "title": "EcoKids India",
+    "subtitle": "నేర్చుకో · ఆడు · భూమిని కాపాడు",
+    "description": "1వ తరగతి నుండి 12వ తరగతి వరకు వేలాది విద్యార్థులతో చేరి ఇంటరాక్టివ్ గేమ్‌లు, ప్రయోగాలు మరియు క్విజ్‌ల ద్వారా పర్యావరణ సంరక్షణ గురించి నేర్చుకో.",
+    "playCta": "ఇప్పుడే ఆడు!",
+    "exploreCta": "అంశాలు చూడు",
+    "mission_title": "మన లక్ష్యం",
+    "mission_text": "సరదాగా మరియు విద్యాపరంగా మన భూమిని ఎలా సంరక్షించాలో నేర్చుకో. రీసైక్లింగ్, శక్తి, జంతు సంరక్షణ మరియు మరెన్నో అంశాలపై గేమ్‌లు, కార్యకలాపాలు మరియు పాఠాలు కనుక్కో.",
+    "games_section": "ఎకో-గేమ్‌లు",
+    "more_games": "మరిన్ని ఎకో-గేమ్‌లు",
+    "topics_section": "ఎకో-అంశాలు",
+    "topics_subtitle": "పర్యావరణం మరియు దాని రక్షణ గురించి వ్యాసాలు మరియు పాఠాలు.",
+    "more_topics": "మరిన్ని ఎకో-అంశాలు",
+    "tryWebApp": "వెబ్ యాప్ ప్రయత్నించండి",
+    "mobileAppComingSoon": "మొబైల్ యాప్ త్వరలో వస్తుంది",
+    "webAppBannerSubtitle": "మొబైల్ యాప్ అభివృద్ధిలో ఉంది; అప్పటివరకు వెబ్ యాప్ ఉపయోగించండి."
   },
   "topics": {
     "title": "పర్యావరణ అంశాలు",
@@ -806,5 +809,15 @@
     "createGame": "Create Game",
     "addExperiment": "Add Experiment",
     "viewReports": "View Reports"
+  },
+  "mission": {
+    "trees": "చెట్లు",
+    "recycling": "రీసైక్లింగ్",
+    "energy": "శక్తి",
+    "animals": "జంతువులు",
+    "water": "నీరు",
+    "soil": "నేల",
+    "schools": "పాఠశాలలు",
+    "planet": "భూమి"
   }
 }

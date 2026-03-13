@@ -85,7 +85,7 @@ const Profile = () => {
 
   if (!isAuthenticated) {
     return (
-      <div className="min-h-screen bg-[var(--bg)] flex items-center justify-center">
+      <div className="min-h-screen bg-white flex items-center justify-center">
         <div className="text-center eco-card p-10 max-w-sm w-full mx-4">
           <div className="text-6xl mb-4">🔒</div>
           <h2 className="text-2xl font-display text-[var(--t1)] mb-4">Access Denied</h2>
@@ -121,7 +121,7 @@ const Profile = () => {
   const heatmapData = generateHeatmap();
 
   return (
-    <div className="min-h-screen bg-[var(--bg)] pb-24 md:pb-10 overflow-x-hidden relative">
+    <div className="min-h-screen bg-white pb-24 md:pb-10 overflow-x-hidden relative">
       <Navbar />
 
       {/* Decorative Orbs */}

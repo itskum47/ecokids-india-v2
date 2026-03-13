@@ -7,10 +7,14 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useSelector } from 'react-redux';
 import api from '../utils/api';
 
 const EcoBot = ({ user }) => {
   const { t, i18n } = useTranslation();
+  const reduxUser = useSelector((state) => state.auth.user);
+  const activeUser = reduxUser || user;
+  const grade = activeUser?.profile?.grade || activeUser?.grade || '6';
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState([]);
   const [input, setInput] = useState('');
@@ -47,7 +51,11 @@ const EcoBot = ({ user }) => {
 
     try {
       const normalizedLanguage = (i18n.language || 'en').split('-')[0];
-      const response = await api.post('/v1/ai/chat', { message: text, language: normalizedLanguage }, { timeout: 35000 });
+      const response = await api.post(
+        '/v1/ai/chat',
+        { message: text, language: normalizedLanguage, grade },
+        { timeout: 35000 }
+      );
       const reply = response?.data?.reply;
       const isFallback = response?.data?.fallback || false;
 
@@ -168,14 +176,17 @@ const EcoBot = ({ user }) => {
                 <div>
                   <h3 className="font-bold text-sm">{t('ecobot.title', { defaultValue: 'EcoBot' })}</h3>
                   <p className="text-xs opacity-90">{t('ecobot.subtitle', { defaultValue: 'Your eco-coach' })}</p>
+                  <div className="mt-1 inline-flex items-center rounded-full bg-green-50 px-2 py-1 text-[10px] font-semibold text-green-700">
+                    🎓 Grade {grade} Mode
+                  </div>
                 </div>
               </div>
 
               <div className="flex items-center gap-2">
                 {/* Streak badge */}
-                {user?.gamification?.streak?.current > 0 && (
+                {activeUser?.gamification?.streak?.current > 0 && (
                   <span className="bg-green-600 px-2 py-1 rounded-full text-xs font-semibold">
-                    🔥 {user.gamification.streak.current}
+                    🔥 {activeUser.gamification.streak.current}
                   </span>
                 )}
 

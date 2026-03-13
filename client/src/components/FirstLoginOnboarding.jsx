@@ -23,7 +23,7 @@ const FirstLoginOnboarding = ({ user, onCompleted }) => {
       <div className="w-full max-w-2xl bg-white rounded-3xl shadow-xl p-8">
         {step === 1 && (
           <div className="text-center space-y-4">
-            <h2 className="text-3xl font-bold">Welcome to EcoKids, {user?.name}! 🌱</h2>
+            <h2 className="text-3xl font-bold text-[#0a1e0a]">Welcome to EcoKids, {user?.name}! 🌱</h2>
             <p className="text-gray-600">Let us set up your eco journey.</p>
             <div className="text-6xl animate-pulse">🌳🌱🌳</div>
           </div>
@@ -31,7 +31,7 @@ const FirstLoginOnboarding = ({ user, onCompleted }) => {
 
         {step === 2 && (
           <div className="space-y-4 text-center">
-            <h2 className="text-2xl font-bold">Choose your eco avatar</h2>
+            <h2 className="text-2xl font-bold text-[#0a1e0a]">Choose your eco avatar</h2>
             <div className="grid grid-cols-6 gap-3">
               {avatars.map((item) => (
                 <button
@@ -48,7 +48,7 @@ const FirstLoginOnboarding = ({ user, onCompleted }) => {
 
         {step === 3 && (
           <div className="text-center space-y-3">
-            <h2 className="text-2xl font-bold">Confirm details</h2>
+            <h2 className="text-2xl font-bold text-[#0a1e0a]">Confirm details</h2>
             <p>Your school: <span className="font-semibold">{user?.profile?.school || '-'}</span></p>
             <p>Grade: <span className="font-semibold">{user?.profile?.grade || user?.grade || '-'}</span></p>
           </div>
@@ -56,7 +56,7 @@ const FirstLoginOnboarding = ({ user, onCompleted }) => {
 
         {step === 4 && (
           <div className="text-center space-y-4">
-            <h2 className="text-2xl font-bold">You earned your first badge! 🏅 EcoStarter</h2>
+            <h2 className="text-2xl font-bold text-[#0a1e0a]">You earned your first badge! 🏅 EcoStarter</h2>
             <div className="text-5xl">🎉 {avatar} 🎉</div>
             <p className="text-gray-600">Great start. Keep learning and earning EcoCoins.</p>
           </div>

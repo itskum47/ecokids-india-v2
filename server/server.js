@@ -276,6 +276,7 @@ app.use('/api/v1/teams', require('./routes/teams'));
 
 // Phase 3: AI Features (EcoBot, Learning Path, Quiz Generator, Photo Verification)
 app.use('/api/v1/ai', protect, require('./routes/ai'));
+app.use('/api/v1/translate', require('./routes/translate'));
 
 // Phase 4: Activity Verification
 app.use('/api/v1/activity', protect, schoolIsolation, require('./routes/activity'));  // Phase 6: School isolation

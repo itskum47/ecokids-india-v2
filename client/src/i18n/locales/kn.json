@@ -185,21 +185,21 @@
         "description": "ವಿದ್ಯಾರ್ಥಿ ಪ್ರಗತಿ ಟ್ರ್ಯಾಕ್ ಮಾಡಲು ಮತ್ತು ಕರ್ತರ್ + ನಿಯೋಜನೆ ಮಾಡಲು ಶಿಕ್ಷಣವಿದುಸಾಲಿಗಳಿಗೆ ವ್ಯಾಪಕ ಸಾಧನಗಳು."
       }
     },
-    "games_subtitle": "Games subtitle",
-    "app_banner": "Start Your Eco Journey Today",
-    "welcome": "Welcome",
-    "title": "Title",
-    "subtitle": "Subtitle",
-    "description": "Description",
-    "playCta": "Play Cta",
-    "exploreCta": "Explore Cta",
-    "mission_title": "Mission title",
-    "mission_text": "Mission text",
-    "games_section": "Games section",
-    "more_games": "More games",
-    "topics_section": "Topics section",
-    "topics_subtitle": "Topics subtitle",
-    "more_topics": "More topics",
+    "games_subtitle": "ಸಂವಾದಾತ್ಮಕ ಆಟಗಳ ಮೂಲಕ ಪರಿಸರ ವಿಜ್ಞಾನದ ಜಗತ್ತನ್ನು ಒಟ್ಟಿಗೆ ಅನ್ವೇಷಿಸುವಲ್ಲಿ ಮೋಜು ಮತ್ತು ಕಲಿಕೆ ಕೈ ಜೋಡಿಸಿ ಸಾಗುತ್ತವೆ.",
+    "app_banner": "ಫೋನ್ ಅಥವಾ ಟ್ಯಾಬ್ಲೆಟ್‌ನಲ್ಲಿ ಚೆನ್ನಾಗಿ ಆಡು — ಆ್ಯಪ್ ಅನ್ನು ಉಚಿತವಾಗಿ ಡೌನ್‌ಲೋಡ್ ಮಾಡು!",
+    "welcome": "ಸ್ವಾಗತ",
+    "title": "EcoKids India",
+    "subtitle": "ಕಲಿಯಿರಿ · ಆಡಿರಿ · ಭೂಮಿಯನ್ನು ಉಳಿಸಿ",
+    "description": "1ನೇ ತರಗತಿಯಿಂದ 12ನೇ ತರಗತಿಯವರೆಗಿನ ಸಾವಿರಾರು ವಿದ್ಯಾರ್ಥಿಗಳೊಂದಿಗೆ ಸೇರಿ ಸಂವಾದಾತ್ಮಕ ಆಟಗಳು, ಪ್ರಯೋಗಗಳು ಮತ್ತು ಕ್ವಿಜ್‌ಗಳ ಮೂಲಕ ಪರಿಸರ ರಕ್ಷಣೆ ಬಗ್ಗೆ ಕಲಿಯಿರಿ.",
+    "playCta": "ಈಗಲೇ ಆಡು!",
+    "exploreCta": "ವಿಷಯಗಳು ನೋಡು",
+    "mission_title": "ನಮ್ಮ ಗುರಿ",
+    "mission_text": "ಮೋಜಿನ ಮತ್ತು ಶೈಕ್ಷಣಿಕ ರೀತಿಯಲ್ಲಿ ನಮ್ಮ ಭೂಮಿಯ ಆರೈಕೆ ಮತ್ತು ರಕ್ಷಣೆ ಹೇಗೆ ಮಾಡಬೇಕೆಂದು ಕಲಿಯಿರಿ. ರಿಸೈಕ್ಲಿಂಗ್, ಶಕ್ತಿ, ಪ್ರಾಣಿ ಸಂರಕ್ಷಣೆ ಮತ್ತು ಇನ್ನೂ ಹಲವು ವಿಷಯಗಳ ಬಗ್ಗೆ ಆಟಗಳು, ಚಟುವಟಿಕೆಗಳು ಮತ್ತು ಪಾಠಗಳನ್ನು ಕಂಡುಹಿಡಿಯಿರಿ.",
+    "games_section": "ಎಕೊ-ಆಟಗಳು",
+    "more_games": "ಇನ್ನಷ್ಟು ಎಕೊ-ಆಟಗಳು",
+    "topics_section": "ಎಕೊ-ವಿಷಯಗಳು",
+    "topics_subtitle": "ಪರಿಸರ ಮತ್ತು ಅದರ ರಕ್ಷಣೆ ಬಗ್ಗೆ ಲೇಖನಗಳು ಮತ್ತು ಪಾಠಗಳು.",
+    "more_topics": "ಇನ್ನಷ್ಟು ಎಕೊ-ವಿಷಯಗಳು",
     "featured": {
       "title": "Featured Content",
       "subtitle": "Popular topics and activities this month",
@@ -214,7 +214,10 @@
       "subtitle": "Join thousands of students learning about environmental conservation",
       "joinNow": "Join Now - It's Free!",
       "alreadyMember": "Already a member? Sign in"
-    }
+    },
+    "tryWebApp": "ವೆಬ್ ಆಪ್ ಪ್ರಯತ್ನಿಸಿ",
+    "mobileAppComingSoon": "ಮೊಬೈಲ್ ಆಪ್ ಶೀಘ್ರದಲ್ಲೇ ಬರುತ್ತಿದೆ",
+    "webAppBannerSubtitle": "ಮೊಬೈಲ್ ಆಪ್ ಅಭಿವೃದ್ಧಿಯಲ್ಲಿ ಇದೆ; ಅದುವರೆಗೆ ವೆಬ್ ಆಪ್ ಬಳಸಿ."
   },
   "navigation": {
     "topics": "Topics",
@@ -806,5 +809,15 @@
     "createGame": "Create Game",
     "addExperiment": "Add Experiment",
     "viewReports": "View Reports"
+  },
+  "mission": {
+    "trees": "ಮರಗಳು",
+    "recycling": "ಮರುಬಳಕೆ",
+    "energy": "ಶಕ್ತಿ",
+    "animals": "ಪ್ರಾಣಿಗಳು",
+    "water": "ನೀರು",
+    "soil": "ಮಣ್ಣು",
+    "schools": "ಶಾಲೆಗಳು",
+    "planet": "ಭೂಮಿ"
   }
 }

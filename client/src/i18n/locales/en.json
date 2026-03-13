@@ -211,21 +211,24 @@
       "joinNow": "Join Now - It's Free!",
       "alreadyMember": "Already a member? Sign in"
     },
-    "games_subtitle": "Games subtitle",
-    "app_banner": "Start Your Eco Journey Today",
-    "welcome": "Welcome",
-    "title": "Title",
-    "subtitle": "Subtitle",
-    "description": "Description",
-    "playCta": "Play Cta",
-    "exploreCta": "Explore Cta",
-    "mission_title": "Mission title",
-    "mission_text": "Mission text",
-    "games_section": "Games section",
-    "more_games": "More games",
-    "topics_section": "Topics section",
-    "topics_subtitle": "Topics subtitle",
-    "more_topics": "More topics"
+    "games_subtitle": "Fun and learning go hand in hand as we explore ecology through interactive games.",
+    "app_banner": "Play better on your phone or tablet — download the app for free!",
+    "welcome": "Welcome to",
+    "title": "EcoKids India",
+    "subtitle": "Learn · Play · Save Our Planet",
+    "description": "Join thousands of students from Class 1 to Class 12 learning about environmental conservation through interactive games, hands-on experiments, and engaging quizzes.",
+    "playCta": "Play Now!",
+    "exploreCta": "Explore Topics",
+    "mission_title": "Our Mission",
+    "mission_text": "Learn how to care for and protect our planet in a fun and educational way. Find games, activities, and lessons about recycling, energy, animal protection, and much more. Join our mission to make the world a better place for everyone!",
+    "games_section": "Eco-Games",
+    "more_games": "More Eco-Games",
+    "topics_section": "Eco-Topics",
+    "topics_subtitle": "Articles and lessons to learn about the environment and how to protect it.",
+    "more_topics": "More Eco-Topics",
+    "tryWebApp": "Try Web App",
+    "mobileAppComingSoon": "Mobile app coming soon",
+    "webAppBannerSubtitle": "Use the web app now while native mobile app is in development."
   },
   "topics": {
     "title": "Environmental Topics",
@@ -806,5 +809,15 @@
     "bio_title": "Bio title",
     "water_title": "Water title",
     "waste_title": "Waste title"
+  },
+  "mission": {
+    "trees": "Trees",
+    "recycling": "Recycling",
+    "energy": "Energy",
+    "animals": "Animals",
+    "water": "Water",
+    "soil": "Soil",
+    "schools": "Schools",
+    "planet": "Planet"
   }
 }

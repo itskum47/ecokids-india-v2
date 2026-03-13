@@ -205,21 +205,24 @@
       "joinNow": "आता सामील व्हा - हे मोफत आहे!",
       "alreadyMember": "आधीच सदस्य आहात? साइन इन करा"
     },
-    "games_subtitle": "Games subtitle",
-    "app_banner": "Start Your Eco Journey Today",
-    "welcome": "Welcome",
-    "title": "Title",
-    "subtitle": "Subtitle",
-    "description": "Description",
-    "playCta": "Play Cta",
-    "exploreCta": "Explore Cta",
-    "mission_title": "Mission title",
-    "mission_text": "Mission text",
-    "games_section": "Games section",
-    "more_games": "More games",
-    "topics_section": "Topics section",
-    "topics_subtitle": "Topics subtitle",
-    "more_topics": "More topics"
+    "games_subtitle": "परस्परक्रियात्मक खेळांद्वारे पर्यावरण शास्त्राचे जग एकत्र शोधताना मज्जा आणि शिक्षण हातात हात घालून जातात.",
+    "app_banner": "फोन किंवा टॅबलेटवर अधिक चांगले खेळा — ऐप मोफत डाउनलोड करा!",
+    "welcome": "स्वागत आहे",
+    "title": "EcoKids India",
+    "subtitle": "शिका · खेळा · पृथ्वी वाचवा",
+    "description": "1 ली ते 12 वी च्या हजारो विद्यार्थ्यांसोबत सामील व्हा आणि परस्परक्रियात्मक खेळ, प्रयोग आणि क्विझद्वारे पर्यावरण संरक्षणाबद्दल शिका.",
+    "playCta": "आत्ता खेळा!",
+    "exploreCta": "विषय पहा",
+    "mission_title": "आमचे ध्येय",
+    "mission_text": "मजेदार आणि शैक्षणिक पद्धतीने आपल्या पृथ्वीची काळजी आणि संरक्षण कसे करावे ते शिका. रिसायक्लिंग, ऊर्जा, प्राणी संरक्षण आणि बरेच काही याबद्दल खेळ, उपक्रम आणि धडे शोधा.",
+    "games_section": "इको-गेम्स",
+    "more_games": "अधिक इको-गेम्स",
+    "topics_section": "इको-विषय",
+    "topics_subtitle": "पर्यावरण आणि त्याच्या संरक्षणाबद्दल लेख आणि धडे.",
+    "more_topics": "अधिक इको-विषय",
+    "tryWebApp": "वेब अॅप वापरून पहा",
+    "mobileAppComingSoon": "मोबाइल अॅप लवकरच येत आहे",
+    "webAppBannerSubtitle": "मोबाइल अॅप विकसित होत आहे; तोपर्यंत वेब अॅप वापरा."
   },
   "topics": {
     "title": "पर्यावरणीय विषय",
@@ -806,5 +809,15 @@
     "createGame": "Create Game",
     "addExperiment": "Add Experiment",
     "viewReports": "View Reports"
+  },
+  "mission": {
+    "trees": "झाडे",
+    "recycling": "पुनर्वापर",
+    "energy": "ऊर्जा",
+    "animals": "प्राणी",
+    "water": "पाणी",
+    "soil": "माती",
+    "schools": "शाळा",
+    "planet": "पृथ्वी"
   }
 }

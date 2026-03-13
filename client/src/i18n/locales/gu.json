@@ -185,21 +185,21 @@
         "description": "વિદ્યાર્થી પ્રગતિ ટ્રેક કરવા અને કાર્યો સોંપવા માટે શિક્ષણવિદોને વ્યાપક સાધનો."
       }
     },
-    "games_subtitle": "Games subtitle",
-    "app_banner": "Start Your Eco Journey Today",
-    "welcome": "Welcome",
-    "title": "Title",
-    "subtitle": "Subtitle",
-    "description": "Description",
-    "playCta": "Play Cta",
-    "exploreCta": "Explore Cta",
-    "mission_title": "Mission title",
-    "mission_text": "Mission text",
-    "games_section": "Games section",
-    "more_games": "More games",
-    "topics_section": "Topics section",
-    "topics_subtitle": "Topics subtitle",
-    "more_topics": "More topics",
+    "games_subtitle": "ઇન્ટરેક્ટિવ રમતો દ્વારા ઇકોલોજીની દુનિયા સાથે મળીને શોધવામાં મઝા અને શિક્ષણ સાથ ચાલે છે.",
+    "app_banner": "ફોન કે ટેબ્લેટ પર વધુ સારી રીતે રમો — ઍપ મફત ડાઉનલોડ કરો!",
+    "welcome": "આપનું સ્વાગત છે",
+    "title": "EcoKids India",
+    "subtitle": "શીખો · રમો · પૃથ્વી બચાવો",
+    "description": "ધોરણ 1 થી 12 ના હજારો વિદ્યાર્થીઓ સાથે જોડાઓ અને ઇન્ટરેક્ટિવ રમતો, પ્રયોગો અને ક્વિઝ દ્વારા પર્યાવરણ સંરક્ષણ વિશે શીખો.",
+    "playCta": "હમણાં રમો!",
+    "exploreCta": "વિષયો જુઓ",
+    "mission_title": "આપણું ધ્યેય",
+    "mission_text": "મઝાદાર અને શૈક્ષણિક રીતે આપણી પૃથ્વીની સંભાળ અને રક્ષણ કેવી રીતે કરવું તે શીખો. રિસાયક્લિંગ, ઊર્જા, પ્રાણી સંરક્ષણ અને ઘણું બધું વિશે રમતો, પ્રવૃત્તિઓ અને પાઠ શોધો.",
+    "games_section": "ઇકો-ગેમ્સ",
+    "more_games": "વધુ ઇકો-ગેમ્સ",
+    "topics_section": "ઇકો-વિષયો",
+    "topics_subtitle": "પર્યાવરણ અને તેના રક્ષણ વિશે લેખો અને પાઠ.",
+    "more_topics": "વધુ ઇકો-વિષયો",
     "featured": {
       "title": "Featured Content",
       "subtitle": "Popular topics and activities this month",
@@ -214,7 +214,10 @@
       "subtitle": "Join thousands of students learning about environmental conservation",
       "joinNow": "Join Now - It's Free!",
       "alreadyMember": "Already a member? Sign in"
-    }
+    },
+    "tryWebApp": "વેબ એપ અજમાવો",
+    "mobileAppComingSoon": "મોબાઇલ એપ જલ્દી આવી રહી છે",
+    "webAppBannerSubtitle": "મોબાઇલ એપ વિકાસમાં છે; ત્યાં સુધી વેબ એપ વાપરો."
   },
   "navigation": {
     "topics": "Topics",
@@ -806,5 +809,15 @@
     "createGame": "Create Game",
     "addExperiment": "Add Experiment",
     "viewReports": "View Reports"
+  },
+  "mission": {
+    "trees": "વૃક્ષો",
+    "recycling": "રિસાયક્લિંગ",
+    "energy": "ઊર્જા",
+    "animals": "પ્રાણીઓ",
+    "water": "પાણી",
+    "soil": "માટી",
+    "schools": "શાળાઓ",
+    "planet": "પૃથ્વી"
   }
 }

@@ -107,6 +107,7 @@ router.get('/profile', protect, requireRole(ROLES.STUDENT), async (req, res) => 
 // PATCH /api/v1/student/onboarding
 router.patch('/onboarding', protect, requireRole(ROLES.STUDENT), async (req, res) => {
   try {
+    const User = require('../models/User');
     const avatar = String(req.body.avatar || 'leaf');
     const user = await User.findByIdAndUpdate(
       req.user.id,

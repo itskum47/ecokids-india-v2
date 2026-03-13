@@ -2,9 +2,37 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import Navbar from '../components/layout/Navbar';
+import useContentTranslation from '../hooks/useContentTranslation';
+
+function TranslatedDescription({ experiment, language }) {
+  const { content, isTranslating } = useContentTranslation(experiment.description, `simple_exp_${experiment.id}`);
+
+  if (isTranslating && language !== 'en') {
+    return (
+      <div className="animate-pulse space-y-2 mb-4">
+        <div className="h-3 bg-gray-200 rounded w-full"></div>
+        <div className="h-3 bg-gray-200 rounded w-5/6"></div>
+      </div>
+    );
+  }
+
+  return (
+    <>
+      {language !== 'en' && (
+        <span className="inline-block mb-2 text-[10px] text-green-600 bg-green-50 px-2 py-0.5 rounded-full">
+          AI Translated
+        </span>
+      )}
+      <p className="text-[12px] text-gray-700 line-clamp-3 mb-4 leading-relaxed whitespace-pre-wrap">
+        {language === 'en' ? experiment.description : content}
+      </p>
+    </>
+  );
+}
 
 const SimpleExperimentsPage = () => {
   const { i18n } = useTranslation();
+  const language = String(i18n.language || 'en').split('-')[0].toLowerCase();
 
   const experiments = [
     {
@@ -80,9 +108,7 @@ const SimpleExperimentsPage = () => {
                 <div key={exp.id} className={`${colors.bg} p-6 rounded-xl border ${colors.border} flex flex-col justify-between hover:shadow-md transition-shadow duration-300`}>
                   <div>
                     <h3 className={`text-lg font-bold ${colors.title} mb-2`}>{exp.title}</h3>
-                    <p className={`${colors.text} text-sm mb-4 leading-relaxed`}>
-                      {exp.description}
-                    </p>
+                    <TranslatedDescription experiment={exp} language={language} />
                     <span className={`inline-block px-3 py-1 ${colors.badgeBg} ${colors.badgeText} rounded-full text-xs font-semibold`}>
                       {exp.difficulty}
                     </span>

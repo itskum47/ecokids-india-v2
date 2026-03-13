@@ -205,21 +205,24 @@
       "joinNow": "ഇപ്പോൾ ചേരുക - ഇത് സൗജന്യമാണ്!",
       "alreadyMember": "ഇതിനകം അംഗമാണോ? സൈൻ ഇൻ ചെയ്യുക"
     },
-    "games_subtitle": "Games subtitle",
-    "app_banner": "Start Your Eco Journey Today",
-    "welcome": "Welcome",
-    "title": "Title",
-    "subtitle": "Subtitle",
-    "description": "Description",
-    "playCta": "Play Cta",
-    "exploreCta": "Explore Cta",
-    "mission_title": "Mission title",
-    "mission_text": "Mission text",
-    "games_section": "Games section",
-    "more_games": "More games",
-    "topics_section": "Topics section",
-    "topics_subtitle": "Topics subtitle",
-    "more_topics": "More topics"
+    "games_subtitle": "ഇന്ററാക്ടീവ് ഗെയിമുകളിലൂടെ പരിസ്ഥിതി ശാസ്ത്രത്തിന്റെ ലോകം ഒരുമിച്ച് പര്യവേക്ഷണം ചെയ്യുന്നതിൽ രസവും പഠനവും കൈകോർക്കുന്നു.",
+    "app_banner": "ഫോണിലോ ടാബ്ലെറ്റിലോ നന്നായി കളിക്കൂ — ആപ്പ് സൗജന്യമായി ഡൗൺലോഡ് ചെയ്യൂ!",
+    "welcome": "സ്വാഗതം",
+    "title": "EcoKids India",
+    "subtitle": "പഠിക്കൂ · കളിക്കൂ · ഭൂമി രക്ഷിക്കൂ",
+    "description": "1 മുതൽ 12 ക്ലാസ് വരെയുള്ള ആയിരക്കണക്കിന് വിദ്യാർഥികളോടൊപ്പം ചേർന്ന് ഇന്ററാക്ടീവ് ഗെയിമുകൾ, പരീക്ഷണങ്ങൾ, ക്വിസുകൾ വഴി പരിസ്ഥിതി സംരക്ഷണം പഠിക്കൂ.",
+    "playCta": "ഇപ്പോൾ കളിക്കൂ!",
+    "exploreCta": "വിഷയങ്ങൾ കാണൂ",
+    "mission_title": "നമ്മുടെ ലക്ഷ്യം",
+    "mission_text": "രസകരവും വിദ്യാഭ്യാസപരവുമായ രീതിയിൽ നമ്മുടെ ഭൂമിയുടെ പരിചരണവും സംരക്ഷണവും എങ്ങനെ ചെയ്യാം എന്ന് പഠിക്കൂ. റീസൈക്ലിങ്, ഊർജം, ജന്തുസംരക്ഷണം എന്നിവയെ കുറിച്ചുള്ള ഗെയിമുകൾ, പ്രവർത്തനങ്ങൾ, പാഠങ്ങൾ കണ്ടെത്തൂ.",
+    "games_section": "ഇക്കോ-ഗെയിമുകൾ",
+    "more_games": "കൂടുതൽ ഇക്കോ-ഗെയിമുകൾ",
+    "topics_section": "ഇക്കോ-വിഷയങ്ങൾ",
+    "topics_subtitle": "പരിസ്ഥിതിയെക്കുറിച്ചും അതിന്റെ സംരക്ഷണത്തെക്കുറിച്ചും ലേഖനങ്ങളും പാഠങ്ങളും.",
+    "more_topics": "കൂടുതൽ ഇക്കോ-വിഷയങ്ങൾ",
+    "tryWebApp": "വെബ് ആപ്പ് പരീക്ഷിക്കുക",
+    "mobileAppComingSoon": "മൊബൈൽ ആപ്പ് ഉടൻ വരുന്നു",
+    "webAppBannerSubtitle": "മൊബൈൽ ആപ്പ് വികസനത്തിലാണ്; അതുവരെ വെബ് ആപ്പ് ഉപയോഗിക്കുക."
   },
   "topics": {
     "title": "പാരിസ്ഥിതിക വിഷയങ്ങൾ",
@@ -806,5 +809,15 @@
     "createGame": "Create Game",
     "addExperiment": "Add Experiment",
     "viewReports": "View Reports"
+  },
+  "mission": {
+    "trees": "മരങ്ങൾ",
+    "recycling": "റീസൈക്ലിംഗ്",
+    "energy": "ഊർജം",
+    "animals": "മൃഗങ്ങൾ",
+    "water": "വെള്ളം",
+    "soil": "മണ്ണ്",
+    "schools": "സ്കൂളുകൾ",
+    "planet": "ഭൂമി"
   }
 }

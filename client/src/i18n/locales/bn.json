@@ -205,21 +205,24 @@
       "joinNow": "এখনই যোগ দিন - এটি বিনামূল্যে!",
       "alreadyMember": "ইতিমধ্যে সদস্য? সাইন ইন করুন"
     },
-    "games_subtitle": "Games subtitle",
-    "app_banner": "Start Your Eco Journey Today",
-    "welcome": "Welcome",
-    "title": "Title",
-    "subtitle": "Subtitle",
-    "description": "Description",
-    "playCta": "Play Cta",
-    "exploreCta": "Explore Cta",
-    "mission_title": "Mission title",
-    "mission_text": "Mission text",
-    "games_section": "Games section",
-    "more_games": "More games",
-    "topics_section": "Topics section",
-    "topics_subtitle": "Topics subtitle",
-    "more_topics": "More topics"
+    "games_subtitle": "ইন্টারেক্টিভ খেলার মাধ্যমে পরিবেশবিদ্যার জগৎ একসাথে আবিষ্কার করো।",
+    "app_banner": "ফোন বা ট্যাবলেটে আরও ভালো খেলো — বিনামূল্যে অ্যাপ ডাউনলোড করো!",
+    "welcome": "স্বাগতম",
+    "title": "EcoKids India",
+    "subtitle": "শেখো · খেলো · পৃথিবী বাঁচাও",
+    "description": "১ম থেকে ১২তম শ্রেণির হাজারো ছাত্রছাত্রীর সাথে যোগ দাও এবং ইন্টারেক্টিভ খেলা, হাতে-কলমে পরীক্ষা ও মজার কুইজের মাধ্যমে পরিবেশ রক্ষা সম্পর্কে শেখো।",
+    "playCta": "এখনই খেলো!",
+    "exploreCta": "বিষয় দেখো",
+    "mission_title": "আমাদের লক্ষ্য",
+    "mission_text": "মজাদার ও শিক্ষামূলক উপায়ে আমাদের পৃথিবীর যত্ন ও সুরক্ষা করতে শেখো। রিসাইক্লিং, শক্তি, পশু সংরক্ষণ ও আরও অনেক কিছু সম্পর্কে খেলা, কার্যক্রম ও পাঠ খোঁজো।",
+    "games_section": "ইকো-গেমস",
+    "more_games": "আরও ইকো-গেমস",
+    "topics_section": "ইকো-বিষয়",
+    "topics_subtitle": "পরিবেশ ও তার সুরক্ষা সম্পর্কে প্রবন্ধ এবং পাঠ।",
+    "more_topics": "আরও ইকো-বিষয়",
+    "tryWebApp": "ওয়েব অ্যাপ ব্যবহার করুন",
+    "mobileAppComingSoon": "মোবাইল অ্যাপ শীঘ্রই আসছে",
+    "webAppBannerSubtitle": "মোবাইল অ্যাপ তৈরি হচ্ছে, ততদিন ওয়েব অ্যাপ ব্যবহার করুন।"
   },
   "topics": {
     "title": "পরিবেশগত বিষয়",
@@ -806,5 +809,15 @@
     "createGame": "Create Game",
     "addExperiment": "Add Experiment",
     "viewReports": "View Reports"
+  },
+  "mission": {
+    "trees": "গাছ",
+    "recycling": "রিসাইক্লিং",
+    "energy": "শক্তি",
+    "animals": "প্রাণী",
+    "water": "জল",
+    "soil": "মাটি",
+    "schools": "স্কুল",
+    "planet": "পৃথিবী"
   }
 }

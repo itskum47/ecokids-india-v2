@@ -285,10 +285,24 @@ exports.logout = async (req, res, next) => {
 // @access  Private
 exports.getMe = async (req, res, next) => {
   try {
+    if (!req.user || !req.user.id) {
+      return res.status(401).json({
+        success: false,
+        message: 'Not authorized to access this route'
+      });
+    }
+
     const user = await User.findById(req.user.id)
       .populate('progress.topicsCompleted.topicId', 'title category')
       .populate('progress.gamesPlayed.gameId', 'title category')
       .populate('progress.experimentsCompleted.experimentId', 'title category');
+
+    if (!user) {
+      return res.status(404).json({
+        success: false,
+        message: 'User not found'
+      });
+    }
 
     res.status(200).json({
       success: true,
@@ -570,11 +584,17 @@ exports.sendOtp = async (req, res, next) => {
     }
 
     const otp = generateOtp();
+
+    if (process.env.NODE_ENV !== 'production') {
+      console.log(`DEV OTP for ${phone}: ${otp}`);
+    }
+
     await redisClient.set(`otp:${phone}`, otp, 'PX', OTP_EXPIRY_MS);
     await redisClient.set(`otp_attempts:${phone}`, 0, 'PX', OTP_EXPIRY_MS);
 
     await sendSms({
       phone,
+      otp,
       message: `Your EcoKids login OTP is ${otp}. Valid for 5 minutes. Do not share. - EcoKids India`
     });
 

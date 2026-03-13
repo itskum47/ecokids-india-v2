@@ -5,6 +5,7 @@ import { fetchTopicById } from '../store/slices/topicsSlice';
 import { updateProgress } from '../store/slices/progressSlice';
 import Skeleton from '../components/common/Skeleton';
 import { useTranslation } from 'react-i18next';
+import useContentTranslation from '../hooks/useContentTranslation';
 
 const TopicDetail = () => {
   const { id } = useParams();
@@ -13,9 +14,11 @@ const TopicDetail = () => {
 
   const { currentTopic, loading, error } = useSelector(state => state.topics);
   const { isAuthenticated } = useSelector(state => state.auth);
+  const { i18n } = useTranslation();
 
   const [readingProgress, setReadingProgress] = useState(0);
   const [startTime] = useState(Date.now());
+  const { content: translatedContent, isTranslating } = useContentTranslation(currentTopic?.content || '', currentTopic?._id || id);
 
   useEffect(() => {
     if (id) {
@@ -149,6 +152,12 @@ const TopicDetail = () => {
 
           <h1 className="text-3xl font-bold text-gray-800 mb-4">{currentTopic.title}</h1>
 
+          {!isTranslating && i18n.language !== 'en' && (
+            <span className="inline-block mb-4 text-xs text-green-600 bg-green-50 px-2 py-1 rounded-full">
+              AI Translated
+            </span>
+          )}
+
           {currentTopic.description && (
             <p className="text-gray-600 text-lg mb-6">{currentTopic.description}</p>
           )}
@@ -173,10 +182,23 @@ const TopicDetail = () => {
 
         {/* Content */}
         <div className="bg-[var(--s1)] rounded-lg shadow-lg p-8 mb-8">
-          <div
-            className="prose prose-lg max-w-none"
-            dangerouslySetInnerHTML={{ __html: currentTopic.content }}
-          />
+          {isTranslating ? (
+            <div className="animate-pulse space-y-3">
+              <div className="h-4 bg-gray-200 rounded w-3/4"></div>
+              <div className="h-4 bg-gray-200 rounded w-full"></div>
+              <div className="h-4 bg-gray-200 rounded w-5/6"></div>
+              <div className="h-4 bg-gray-200 rounded w-2/3"></div>
+            </div>
+          ) : i18n.language === 'en' ? (
+            <div
+              className="prose prose-lg max-w-none"
+              dangerouslySetInnerHTML={{ __html: currentTopic.content }}
+            />
+          ) : (
+            <div className="prose prose-lg max-w-none whitespace-pre-wrap">
+              {translatedContent}
+            </div>
+          )}
         </div>
 
         {/* Key Points */}

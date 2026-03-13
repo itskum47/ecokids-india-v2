@@ -1,26 +1,35 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
-import LanguageDetector from 'i18next-browser-languagedetector';
-import Backend from 'i18next-http-backend';
+import en from './locales/en.json';
+import hi from './locales/hi.json';
+import bn from './locales/bn.json';
+import ta from './locales/ta.json';
+import te from './locales/te.json';
+import mr from './locales/mr.json';
+import kn from './locales/kn.json';
+import gu from './locales/gu.json';
+import pa from './locales/pa.json';
+import ml from './locales/ml.json';
 
-const savedLang = localStorage.getItem('ecokids-language') || 'en';
+const savedLanguage = localStorage.getItem('ecokids-language') || 'en';
 
 i18n
-  .use(Backend)
-  .use(LanguageDetector)
   .use(initReactI18next)
   .init({
-    lng: savedLang,
+    resources: {
+      en: { translation: en },
+      hi: { translation: hi },
+      bn: { translation: bn },
+      ta: { translation: ta },
+      te: { translation: te },
+      mr: { translation: mr },
+      kn: { translation: kn },
+      gu: { translation: gu },
+      pa: { translation: pa },
+      ml: { translation: ml },
+    },
+    lng: savedLanguage,
     fallbackLng: 'en',
-    supportedLngs: ['en', 'hi', 'bn', 'ta', 'te', 'mr', 'kn', 'gu', 'pa', 'ml'],
-    defaultNS: 'common',
-    backend: {
-      loadPath: '/locales/{{lng}}/{{ns}}.json',
-    },
-    detection: {
-      order: ['localStorage', 'navigator'],
-      caches: ['localStorage'],
-    },
     interpolation: { escapeValue: false },
   });
 
@@ -29,6 +38,6 @@ i18n.on('languageChanged', (lng) => {
   document.documentElement.lang = lng;
 });
 
-document.documentElement.lang = i18n.language || savedLang;
+document.documentElement.lang = i18n.language || savedLanguage;
 
 export default i18n;

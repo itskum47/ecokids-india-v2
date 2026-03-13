@@ -211,21 +211,24 @@
       "joinNow": "अभी जुड़ें - यह मुफ्त है!",
       "alreadyMember": "पहले से सदस्य हैं? साइन इन करें"
     },
-    "games_subtitle": "Games subtitle",
-    "app_banner": "Start Your Eco Journey Today",
-    "welcome": "Welcome",
-    "title": "Title",
-    "subtitle": "Subtitle",
-    "description": "Description",
-    "playCta": "Play Cta",
-    "exploreCta": "Explore Cta",
-    "mission_title": "Mission title",
-    "mission_text": "Mission text",
-    "games_section": "Games section",
-    "more_games": "More games",
-    "topics_section": "Topics section",
-    "topics_subtitle": "Topics subtitle",
-    "more_topics": "More topics"
+    "games_subtitle": "मनोरंजक इंटरैक्टिव खेलों के ज़रिए पारिस्थितिकी की दुनिया एक साथ खोजें।",
+    "app_banner": "फ़ोन या टैबलेट पर बेहतर खेलें — मुफ़्त में ऐप डाउनलोड करें!",
+    "welcome": "स्वागत है",
+    "title": "EcoKids India",
+    "subtitle": "सीखो · खेलो · धरती बचाओ",
+    "description": "कक्षा 1 से 12 तक के हज़ारों छात्रों के साथ जुड़ें और इंटरैक्टिव खेलों, प्रयोगों और क्विज़ के माध्यम से पर्यावरण संरक्षण के बारे में सीखें।",
+    "playCta": "अभी खेलें!",
+    "exploreCta": "विषय खोजें",
+    "mission_title": "हमारा मिशन",
+    "mission_text": "मज़ेदार और शैक्षिक तरीके से अपनी धरती की देखभाल और सुरक्षा करना सीखें। रीसाइक्लिंग, ऊर्जा, पशु संरक्षण और बहुत कुछ के बारे में खेल, गतिविधियाँ और पाठ खोजें।",
+    "games_section": "इको-गेम्स",
+    "more_games": "और इको-गेम्स",
+    "topics_section": "इको-विषय",
+    "topics_subtitle": "पर्यावरण और उसकी सुरक्षा के बारे में लेख और पाठ।",
+    "more_topics": "और इको-विषय",
+    "tryWebApp": "वेब ऐप आज़माएँ",
+    "mobileAppComingSoon": "मोबाइल ऐप जल्द आ रहा है",
+    "webAppBannerSubtitle": "मोबाइल ऐप विकसित हो रहा है, तब तक वेब ऐप का उपयोग करें।"
   },
   "topics": {
     "title": "पर्यावरण विषय",
@@ -806,5 +809,15 @@
     "bio_title": "Bio title",
     "water_title": "Water title",
     "waste_title": "Waste title"
+  },
+  "mission": {
+    "trees": "पेड़",
+    "recycling": "रीसाइक्लिंग",
+    "energy": "ऊर्जा",
+    "animals": "जानवर",
+    "water": "पानी",
+    "soil": "मिट्टी",
+    "schools": "स्कूल",
+    "planet": "धरती"
   }
 }

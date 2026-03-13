@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import Navbar from '../components/layout/Navbar';
 import { useTranslation } from 'react-i18next';
 import { apiRequest } from '../utils/api';
+import useContentTranslation from '../hooks/useContentTranslation';
 
 const getSafetyColor = (safety) => {
   switch (safety?.toLowerCase()) {
@@ -26,6 +27,7 @@ const getSafetyLabel = (safety) => {
 
 const ExperimentDetail = () => {
   const { slug } = useParams();
+  const { i18n } = useTranslation();
   const { user, isAuthenticated } = useSelector(state => state.auth);
 
   const [experiment, setExperiment] = useState(null);
@@ -37,6 +39,30 @@ const ExperimentDetail = () => {
   const [observations, setObservations] = useState('');
   const [submitting, setSubmitting] = useState(false);
   const [success, setSuccess] = useState(false);
+
+  const {
+    content: translatedDescription,
+    isTranslating: isDescriptionTranslating,
+  } = useContentTranslation(experiment?.description || '', `${experiment?._id || slug}:description`);
+
+  const instructionsSource = (experiment?.steps || [])
+    .map((step, index) => `${index + 1}. ${step.instruction || ''}`)
+    .join('\n');
+
+  const {
+    content: translatedInstructions,
+    isTranslating: isInstructionsTranslating,
+  } = useContentTranslation(instructionsSource, `${experiment?._id || slug}:instructions`);
+
+  const {
+    content: translatedScienceExplanation,
+    isTranslating: isScienceTranslating,
+  } = useContentTranslation(experiment?.scienceExplanation || '', `${experiment?._id || slug}:science`);
+
+  const translatedStepLines = translatedInstructions
+    .split(/\n+/)
+    .map((line) => line.replace(/^\d+\.\s*/, '').trim())
+    .filter(Boolean);
 
   useEffect(() => {
     fetchExperiment();
@@ -171,7 +197,21 @@ const ExperimentDetail = () => {
           </div>
 
           <h1 className="font-display text-5xl text-[var(--t1)] mb-4">{experiment.title}</h1>
-          <p className="font-body text-[16px] text-[var(--t2)]">{experiment.description}</p>
+          {!isDescriptionTranslating && i18n.language !== 'en' && (
+            <span className="inline-block mb-3 text-xs text-green-600 bg-green-50 px-2 py-1 rounded-full">
+              AI Translated
+            </span>
+          )}
+          {isDescriptionTranslating ? (
+            <div className="animate-pulse space-y-3 max-w-xl mx-auto">
+              <div className="h-4 bg-gray-200 rounded w-3/4 mx-auto"></div>
+              <div className="h-4 bg-gray-200 rounded w-full"></div>
+            </div>
+          ) : (
+            <p className="font-body text-[16px] text-[var(--t2)] whitespace-pre-wrap">
+              {i18n.language === 'en' ? experiment.description : translatedDescription}
+            </p>
+          )}
         </div>
 
         {/* Materials Card */}
@@ -208,9 +248,16 @@ const ExperimentDetail = () => {
 
               {/* Right Content */}
               <div className="flex-1 pt-1.5">
-                <p className="font-ui text-[16px] text-[var(--t1)] leading-relaxed mb-2">
-                  {step.instruction}
-                </p>
+                {isInstructionsTranslating && i18n.language !== 'en' ? (
+                  <div className="animate-pulse space-y-2">
+                    <div className="h-4 bg-gray-200 rounded w-11/12"></div>
+                    <div className="h-4 bg-gray-200 rounded w-4/5"></div>
+                  </div>
+                ) : (
+                  <p className="font-ui text-[16px] text-[var(--t1)] leading-relaxed mb-2 whitespace-pre-wrap">
+                    {i18n.language === 'en' ? step.instruction : (translatedStepLines[index] || step.instruction)}
+                  </p>
+                )}
                 {step.timeEstimate && (
                   <div className="font-mono text-[11px] text-[var(--t3)]">
                     ⌛ {step.timeEstimate}
@@ -228,9 +275,16 @@ const ExperimentDetail = () => {
             <div className="absolute top-0 right-0 w-64 h-64 bg-[var(--c1)] rounded-full blur-[100px] opacity-10 pointer-events-none" />
 
             <h3 className="font-display text-2xl text-[var(--c1)] mb-4 relative z-10">The Science Behind It</h3>
-            <p className="font-body text-[15px] text-[var(--t2)] leading-relaxed relative z-10">
-              {experiment.scienceExplanation}
-            </p>
+            {isScienceTranslating && i18n.language !== 'en' ? (
+              <div className="animate-pulse space-y-2 relative z-10">
+                <div className="h-4 bg-gray-200 rounded w-full"></div>
+                <div className="h-4 bg-gray-200 rounded w-5/6"></div>
+              </div>
+            ) : (
+              <p className="font-body text-[15px] text-[var(--t2)] leading-relaxed relative z-10 whitespace-pre-wrap">
+                {i18n.language === 'en' ? experiment.scienceExplanation : translatedScienceExplanation}
+              </p>
+            )}
           </div>
         )}
 

@@ -15,7 +15,7 @@ const getAdaptiveTimeout = () => {
 
 // Create axios instance
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || '/api',
+  baseURL: import.meta.env.VITE_API_URL || '/api/v1',
   timeout: getAdaptiveTimeout(),
   headers: {
     'Content-Type': 'application/json',
@@ -29,6 +29,11 @@ const apiClient = api;
 api.interceptors.request.use(
   (config) => {
     config.timeout = getAdaptiveTimeout();
+
+    // Preserve existing /v1/... callers while using /api/v1 as the shared base URL.
+    if (typeof config.url === 'string' && config.url.startsWith('/v1/')) {
+      config.url = config.url.replace(/^\/v1/, '');
+    }
 
     // Don't add Authorization header for public auth routes
     const publicRoutes = ['/auth/login', '/auth/register', '/auth/forgot-password'];

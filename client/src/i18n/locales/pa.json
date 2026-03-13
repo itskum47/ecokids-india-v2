@@ -205,21 +205,24 @@
       "joinNow": "ਹੁਣੇ ਸ਼ਾਮਲ ਹੋਵੋ - ਇਹ ਮੁਫਤ ਹੈ!",
       "alreadyMember": "ਪਹਿਲਾਂ ਹੀ ਮੈਂਬਰ ਹੋ? ਸਾਈਨ ਇਨ ਕਰੋ"
     },
-    "games_subtitle": "Games subtitle",
-    "app_banner": "Start Your Eco Journey Today",
-    "welcome": "Welcome",
-    "title": "Title",
-    "subtitle": "Subtitle",
-    "description": "Description",
-    "playCta": "Play Cta",
-    "exploreCta": "Explore Cta",
-    "mission_title": "Mission title",
-    "mission_text": "Mission text",
-    "games_section": "Games section",
-    "more_games": "More games",
-    "topics_section": "Topics section",
-    "topics_subtitle": "Topics subtitle",
-    "more_topics": "More topics"
+    "games_subtitle": "ਇੰਟਰਐਕਟਿਵ ਖੇਡਾਂ ਰਾਹੀਂ ਵਾਤਾਵਰਣ ਵਿਗਿਆਨ ਦੀ ਦੁਨੀਆ ਇੱਕਠੇ ਖੋਜਣ ਵਿੱਚ ਮਜ਼ਾ ਅਤੇ ਸਿੱਖਣਾ ਹੱਥੋਂ-ਹੱਥ ਚੱਲਦਾ ਹੈ।",
+    "app_banner": "ਫ਼ੋਨ ਜਾਂ ਟੈਬਲੇਟ ਤੇ ਵਧੀਆ ਖੇਡੋ — ਐਪ ਮੁਫ਼ਤ ਡਾਊਨਲੋਡ ਕਰੋ!",
+    "welcome": "ਜੀ ਆਇਆਂ ਨੂੰ",
+    "title": "EcoKids India",
+    "subtitle": "ਸਿੱਖੋ · ਖੇਡੋ · ਧਰਤੀ ਬਚਾਓ",
+    "description": "ਕਲਾਸ 1 ਤੋਂ 12 ਤੱਕ ਦੇ ਹਜ਼ਾਰਾਂ ਵਿਦਿਆਰਥੀਆਂ ਨਾਲ ਜੁੜੋ ਅਤੇ ਇੰਟਰਐਕਟਿਵ ਖੇਡਾਂ, ਪ੍ਰਯੋਗਾਂ ਤੇ ਕੁਇਜ਼ ਰਾਹੀਂ ਵਾਤਾਵਰਣ ਸੁਰੱਖਿਆ ਬਾਰੇ ਸਿੱਖੋ।",
+    "playCta": "ਹੁਣੇ ਖੇਡੋ!",
+    "exploreCta": "ਵਿਸ਼ੇ ਦੇਖੋ",
+    "mission_title": "ਸਾਡਾ ਮਕਸਦ",
+    "mission_text": "ਮਜ਼ੇਦਾਰ ਅਤੇ ਸਿੱਖਿਆਵਾਂ ਭਰੇ ਢੰਗ ਨਾਲ ਸਾਡੀ ਧਰਤੀ ਦੀ ਦੇਖਭਾਲ ਅਤੇ ਸੁਰੱਖਿਆ ਕਰਨਾ ਸਿੱਖੋ। ਰੀਸਾਈਕਲਿੰਗ, ਊਰਜਾ, ਜਾਨਵਰਾਂ ਦੀ ਸੁਰੱਖਿਆ ਅਤੇ ਹੋਰ ਬਹੁਤ ਕੁਝ ਬਾਰੇ ਖੇਡਾਂ, ਗਤੀਵਿਧੀਆਂ ਅਤੇ ਪਾਠ ਲੱਭੋ।",
+    "games_section": "ਈਕੋ-ਖੇਡਾਂ",
+    "more_games": "ਹੋਰ ਈਕੋ-ਖੇਡਾਂ",
+    "topics_section": "ਈਕੋ-ਵਿਸ਼ੇ",
+    "topics_subtitle": "ਵਾਤਾਵਰਣ ਅਤੇ ਇਸਦੀ ਸੁਰੱਖਿਆ ਬਾਰੇ ਲੇਖ ਅਤੇ ਪਾਠ।",
+    "more_topics": "ਹੋਰ ਈਕੋ-ਵਿਸ਼ੇ",
+    "tryWebApp": "ਵੈੱਬ ਐਪ ਅਜ਼ਮਾਓ",
+    "mobileAppComingSoon": "ਮੋਬਾਈਲ ਐਪ ਜਲਦੀ ਆ ਰਿਹਾ ਹੈ",
+    "webAppBannerSubtitle": "ਮੋਬਾਈਲ ਐਪ ਬਣ ਰਹੀ ਹੈ; ਉਦੋਂ ਤੱਕ ਵੈੱਬ ਐਪ ਵਰਤੋਂ।"
   },
   "topics": {
     "title": "ਵਾਤਾਵਰਣ ਵਿਸ਼ੇ",
@@ -806,5 +809,15 @@
     "createGame": "Create Game",
     "addExperiment": "Add Experiment",
     "viewReports": "View Reports"
+  },
+  "mission": {
+    "trees": "ਦਰੱਖਤ",
+    "recycling": "ਰੀਸਾਈਕਲਿੰਗ",
+    "energy": "ਊਰਜਾ",
+    "animals": "ਜਾਨਵਰ",
+    "water": "ਪਾਣੀ",
+    "soil": "ਮਿੱਟੀ",
+    "schools": "ਸਕੂਲ",
+    "planet": "ਧਰਤੀ"
   }
 }

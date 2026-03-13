@@ -2,9 +2,9 @@ const axios = require('axios');
 
 const FAST2SMS_URL = 'https://www.fast2sms.com/dev/bulkV2';
 
-const sendSms = async ({ phone, message }) => {
+const sendSms = async ({ phone, message, otp }) => {
   try {
-    if (!phone || !message) return { success: false, skipped: true };
+    if (!phone || (!message && !otp)) return { success: false, skipped: true };
     if (!/^\d{10}$/.test(String(phone))) return { success: false, skipped: true };
 
     const apiKey = process.env.FAST2SMS_API_KEY;
@@ -12,23 +12,29 @@ const sendSms = async ({ phone, message }) => {
       return { success: false, skipped: true };
     }
 
-    await axios.post(
-      FAST2SMS_URL,
-      {
-        route: 'q',
-        message,
-        language: 'english',
-        flash: 0,
-        numbers: String(phone),
+    const isOtpFlow = Boolean(otp);
+
+    const payload = isOtpFlow
+      ? {
+          route: 'otp',
+          variables_values: String(otp),
+          numbers: String(phone),
+        }
+      : {
+          route: 'q',
+          message,
+          language: 'english',
+          flash: 0,
+          numbers: String(phone),
+        };
+
+    await axios.post(FAST2SMS_URL, payload, {
+      headers: {
+        authorization: process.env.FAST2SMS_API_KEY,
+        'Content-Type': 'application/json',
       },
-      {
-        headers: {
-          authorization: apiKey,
-          'Content-Type': 'application/json',
-        },
-        timeout: 8000,
-      }
-    );
+      timeout: 8000,
+    });
 
     return { success: true };
   } catch (error) {
